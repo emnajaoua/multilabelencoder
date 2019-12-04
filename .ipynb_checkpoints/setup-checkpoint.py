@@ -9,8 +9,9 @@ setup(  name = 'multilabelencoder',
         install_requires = ['sklearn'],
         zip_safe = False,
         author = "HMG - Team Big Data & AI",
-        author_email = 'data@handelsblattgroup.com',
+        author_email = 'emnajaoua1@gmail.com',
         maintainer = "Emna Jaoua",
         maintainer_email = "E.Jaoua@handelsblattgroup.com",
-        dependency_links= ['']
+        dependency_links= [''],
+      url="https://github.com/emnajaoua/multilabelencoder"
      )
