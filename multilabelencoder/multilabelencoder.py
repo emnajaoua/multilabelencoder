@@ -54,8 +54,8 @@ class MultiColumnLabelEncoder:
     # make load a static method
     load = staticmethod(load)
     
-if __name__ == "__main__":
+#if __name__ == "__main__":
     # code for standalone use
-    encoder = MultiColumnLabelEncoder()
+#    encoder = MultiColumnLabelEncoder()
     #MultiColumnLabelEncoder.__module__ = "score"
-    encoder.save("encoder.pkl")
+#    encoder.save("encoder.pkl")

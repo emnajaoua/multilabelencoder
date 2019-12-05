@@ -1,6 +1,6 @@
 from setuptools import setup
 setup(  name = 'multilabelencoder',
-        version = "1.0.2",
+        version = "1.0.4",
         license = 'MIT',
         description = 'Labelencoder for many pandas dataframe columns package',
         scripts=['multilabelencoder.py'] ,
