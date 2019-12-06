@@ -1,10 +1,10 @@
 from setuptools import setup
 setup(  name = 'multilabelencoder',
-        version = "1.0.4",
+        version = "1.0.5",
         license = 'MIT',
         description = 'Labelencoder for many pandas dataframe columns package',
-        scripts=['multilabelencoder.py'] ,
-#        packages = ['multilabelencoder'],
+#        scripts=['multilabelencoder.py'] ,
+        packages = ['multilabelencoder'],
 #        package_data = {'hmglib': ['readme.txt']},
         install_requires = ['sklearn'],
         zip_safe = False,

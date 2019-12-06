@@ -1,18 +1,3 @@
-# ---
-# jupyter:
-#   jupytext:
-#     text_representation:
-#       extension: .py
-#       format_name: light
-#       format_version: '1.4'
-#       jupytext_version: 1.2.4
-#   kernelspec:
-#     display_name: Python 3.6 - AzureML
-#     language: python
-#     name: python3-azureml
-# ---
-
-# +
 import pickle
 from sklearn.preprocessing import LabelEncoder
 
@@ -29,10 +14,11 @@ class MultiColumnLabelEncoder:
         columns in X.
         '''        
         output = X.copy()
-        
         if self.columns is not None:
             for col in self.columns:
-                output[col] = LabelEncoder().fit_transform(output[col])
+                print('column', col)
+                encoder = LabelEncoder()
+                output[col] = encoder.fit_transform(output[col])
         else:
             for colname, col in output.iteritems():
                 output[colname] = LabelEncoder().fit_transform(col)
@@ -54,8 +40,8 @@ class MultiColumnLabelEncoder:
     # make load a static method
     load = staticmethod(load)
     
-if __name__ == "__main__":
+#if __name__ == "__main__":
     # code for standalone use
-    encoder = MultiColumnLabelEncoder()
+#    encoder = MultiColumnLabelEncoder()
     #MultiColumnLabelEncoder.__module__ = "score"
-    encoder.save("encoder.pkl")
+#    encoder.save("encoder.pkl")

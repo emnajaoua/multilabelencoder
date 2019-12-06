@@ -1,6 +1,7 @@
 README.md
-multilabelencoder.py
 setup.py
+multilabelencoder/__init__.py
+multilabelencoder/multilabelencoder.py
 multilabelencoder.egg-info/PKG-INFO
 multilabelencoder.egg-info/SOURCES.txt
 multilabelencoder.egg-info/dependency_links.txt
